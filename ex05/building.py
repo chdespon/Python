@@ -19,7 +19,7 @@ def compt_carac(string: str) -> None:
 	result:
 		print the number of characters in the string
 	"""
-
+	
 	upper = 0
 	lower = 0
 	punct = 0
@@ -36,7 +36,7 @@ def compt_carac(string: str) -> None:
 			space += 1
 		else:
 			punct += 1
-	print("The texte contains: " + str(len(string))  + " characters")
+	print("The texte contains: " + str(len(string)) + " characters")
 	print("\t- " + str(upper) + " upper letters")
 	print("\t- " + str(lower) + " lower letters")
 	print("\t- " + str(punct) + " punctuation marks")
