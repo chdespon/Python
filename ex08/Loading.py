@@ -19,7 +19,7 @@ def ft_tqdm(lst: range) -> None:
 	size = 77
 	def show(j):
 			x = int(size*j/count)
-			prefix = f"{j/count:.0%}"
+			prefix = f"{j/count:.0%}".rjust(4)
 
 			print(f"{prefix}|{u'█'*x}{(' '*(size-x))}| {j}/{count}", end='\r', flush=True)
 	for i in lst:
