@@ -12,6 +12,7 @@
 from ft_filter import ft_filter
 import sys
 
+
 def filter_string(string: str, n: int) -> None:
     """
     Filter a string
