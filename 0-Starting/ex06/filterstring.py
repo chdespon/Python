@@ -9,9 +9,8 @@
 # or if the type of any argument is wrong,
 # the program prints an AssertionError.
 
+from ft_filter import ft_filter
 import sys
-import ft_filter
-
 
 def filter_string(string: str, n: int) -> None:
     """
@@ -26,8 +25,7 @@ def filter_string(string: str, n: int) -> None:
         print a list of words from S that have a length greater than N
     """
 
-    # print(ft_filter.ft_filter(42, string.split()))
-    print(ft_filter.ft_filter(lambda word: len(word) > n, string.split()))
+    print(ft_filter(lambda word: len(word) > n, string.split()))
 
 
 def main():
